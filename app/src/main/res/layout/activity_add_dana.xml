@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDanaActivity">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/rvToolbar"
+        android:layout_width="match_parent"
+        android:background="@color/purple_700"
+        android:layout_height="55dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tvToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Dana"
+            android:layout_toRightOf="@id/ivBack"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/ivBack" />
+
+        <ImageView
+            android:layout_marginHorizontal="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            app:tint="@android:color/white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:layout_below="@+id/rvToolbar"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"/>
+
+    <Spinner
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:id="@+id/spinnerNama"
+        android:layout_below="@id/txtNama"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/input_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtBulan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bulan"
+        android:layout_below="@+id/spinnerNama"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"/>
+
+    <Spinner
+        android:paddingVertical="25dp"
+        android:paddingHorizontal="10dp"
+        android:id="@+id/spinnerBulan"
+        android:layout_below="@id/txtBulan"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/input_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/bulan"/>
+
+    <TextView
+        android:id="@+id/txtTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        android:layout_below="@+id/spinnerBulan"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:paddingVertical="25dp"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/etTanggal"
+        android:layout_below="@id/txtTanggal"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/input_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"/>
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTanggal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_custom"
+        android:text="Tambah"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

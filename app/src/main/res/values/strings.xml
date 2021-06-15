@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DT PABKK</string>
+    <string name="username">Username <font color='red'>*</font></string>
+    <string name="password">Password <font color='red'>*</font></string>
+
+    <string-array name="bulan">
+
+        <item>Januari</item>
+        <item>Febuari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+
+    </string-array>
+
+</resources>

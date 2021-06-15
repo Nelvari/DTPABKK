@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/cvUser"
+    android:layout_width="match_parent"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="20sp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:background="#707070"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/background"
+            android:text="Nama"
+            android:textColor="@android:color/white"
+            android:paddingHorizontal="10dp"
+            android:textSize="20sp"
+            android:paddingTop="25dp"/>
+
+        <TextView
+            android:id="@+id/tvKodeNama"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/txtJudul"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:hint="@string/username"
+        android:id="@+id/etEmail"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtJudul"
+        android:background="@drawable/input_field"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="10dp"
+        android:fontFamily="@font/regular"
+        android:inputType="text"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:hint="@string/password"
+        android:id="@+id/etPassword"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmail"
+        android:background="@drawable/input_field"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="10dp"
+        android:fontFamily="@font/regular"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_custom"
+        android:text="MASUK"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
