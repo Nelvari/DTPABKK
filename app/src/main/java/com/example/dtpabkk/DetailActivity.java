@@ -60,7 +60,7 @@ public class DetailActivity extends AppCompatActivity {
             sendalan(bulan, data, kodeNama);
         }else if(data.equals("dadakan")){
             tvToolbar.setText("Detail Dadakan " + nama + " ( " + bulan + " )");
-            sendalan(bulan, data, kodeNama);
+            dadakan(bulan, data, kodeNama);
         }
 
         ivBack.setOnClickListener(new View.OnClickListener() {

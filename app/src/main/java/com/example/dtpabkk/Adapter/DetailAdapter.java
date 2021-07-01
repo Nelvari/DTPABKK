@@ -45,6 +45,8 @@ public class DetailAdapter extends RecyclerView.Adapter<DetailAdapter.DetailView
                 Intent in = new Intent(holder.itemView.getContext(), EditDanaActivity.class);
                 in.putExtra("data", dataList.get(position).getDana());
                 in.putExtra("id", dataList.get(position).getId());
+                in.putExtra("tanggal", dataList.get(position).getTanggal());
+                in.putExtra("nama", dataList.get(position).getNama());
                 holder.itemView.getContext().startActivity(in);
             }
         });

@@ -44,6 +44,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
             public void onClick(View view) {
                 Intent in = new Intent(holder.itemView.getContext(), EditUserActivity.class);
                 in.putExtra("id", dataList.get(position).getId());
+                in.putExtra("nama", dataList.get(position).getNama());
                 holder.itemView.getContext().startActivity(in);
             }
         });
